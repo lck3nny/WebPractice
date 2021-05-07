@@ -53,6 +53,21 @@ todoRoutes.route('/add').post(function(req, res){
         });
 })
 
+todoRoutes.route('/:id').delete(function(req, res){
+    Todo.findById(req.params.id, function(err, todo){
+        if(!todo)
+            res.status(404).send("data is not found");
+        else
+            
+            todo.delete().then(todo => {
+                res.json('Todo updated!');
+            })
+            .catch(err => {
+                res.status(400).send("Delete not possible")
+            });
+    });
+})
+
 todoRoutes.route('/update/:id').post(function(req, res){
     Todo.findById(req.params.id, function(err, todo){
         if(!todo)
