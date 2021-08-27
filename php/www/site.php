@@ -96,21 +96,56 @@
       ?>
 
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- URL Params
-           - allow user to edit words in the script
-           - output result -->
+      <!-- Post vs Get -->
       <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <h3>URL Params</h3>
+      <h3>GET vs POST</h3>
 
-      <form action="site.php" method="get">
-        Name: <input type="text" name="name"> <br>
+      <form action="site.php" method="post">
+        Password: <input type="password" name="password">
         <input type="submit">
       </form>
       <br>
+      <?php
+        echo $_POST["password"];
+        echo "<hr>";
+      ?>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- Arrays 
+            - not limited to a single data type -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <h3>Arrays</h3>
 
       <?php
-        echo $_GET["name"];
+        $friends = array("alice", "bob", "charlie", "dave", "elle");
+        $friends[1] = "bill";
+        $friends[4] = "frank";
+        echo count($friends);
+        echo "<hr>"; 
       ?>
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- Checkboxes 
+             -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <h3>Checkboxes</h3>
+      <form action="site.php" method="post">
+        Apples: <input type="checkbox" name="fruits[]" value="apples">
+        <br>
+        Bananas: <input type="checkbox" name="fruits[]" value="bananas">
+        <br>
+        Oranges: <input type="checkbox" name="fruits[]" value="oranges">
+        <br>
+        <input type="submit">
+      </form>
+
+      <?php 
+        $fruits = $_POST["fruits"];
+        echo $fruits[0];
+        echo "<hr>";
+      ?>
+
+
 
   </body>
  </html>
