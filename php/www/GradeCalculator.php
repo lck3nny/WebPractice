@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>GPA Calculator</title>
+		<title>Grade Calculator</title>
 	</head>
 	<body>
-		<h1>GPA Calculator</h1>
+		<h1>Grade Calculator</h1>
 		<hr>
 
-		<form action="GPACalculator.php" method="post">
+		<form action="GradeCalculator.php" method="post">
 			What is your grade? <br>
 			<input type="text" name="grade"> <br>
 			<input type="submit">
