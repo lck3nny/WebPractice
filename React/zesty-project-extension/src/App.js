@@ -42,6 +42,8 @@ const App = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [numLoaded, setNumLoaded] = useState(0);
 
+  
+
   const handleClickPrev = () => {
     const length = images.length - 1;
 
@@ -65,7 +67,7 @@ const App = () => {
   return (
     <section>
       <header>
-        <h1>Zesty</h1>
+        <h1>Gallery</h1>
         <h2>
           A photography project
           <br />
