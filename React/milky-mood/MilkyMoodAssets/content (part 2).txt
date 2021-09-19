@@ -1,0 +1,34 @@
+Homepage copy
+Title: MilkyMood
+Bottom text: Jun 12 World Tour Aug 17
+Button: Sign up for updates
+
+Form copy
+Title: Sign Up
+Paragraph text: Join our newsletter to be notified of when pre-release tickets for our first ever world tour go on sale.
+
+Input field: Name
+Error message: Required field
+
+Input field: Email address
+Error messages:
+Require field
+Must be a valid email address
+
+Button: SUBMIT
+
+Success message copy
+Title: Yay! We’re so excited!
+Paragraph text: We hope you are too. In the meantime you can follow us on social media to keep up to do date:
+
+Colors
+Text: #FBFBFB
+
+Fonts
+Work Sans (weights: 500 and 600)
+https://fonts.google.com/specimen/Work+Sans?preview.text_type=custom&query=work
+
+Links
+Demo: https://irql5.csb.app/
+GitHub repo: https://github.com/superhi/milkymood/tree/part_2
+Figma file: https://www.figma.com/file/AHnM88AiPjsvfvreH2bJYI/Project_2_MilkyMood?node-id=0%3A1

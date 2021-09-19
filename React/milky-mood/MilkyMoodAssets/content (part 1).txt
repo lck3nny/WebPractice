@@ -1,0 +1,15 @@
+Copy
+Title: MilkyMood
+Bottom text: Jun 12 World Tour Aug 17
+
+Colors
+Text: #FBFBFB
+
+Fonts
+Work Sans (weights: 500 and 600)
+https://fonts.google.com/specimen/Work+Sans?preview.text_type=custom&query=work
+
+Links
+Demo: https://opkt7.csb.app/
+GitHub repo: https://github.com/superhi/milkymood
+Figma file: https://www.figma.com/file/AHnM88AiPjsvfvreH2bJYI/Project_2_MilkyMood?node-id=0%3A1
